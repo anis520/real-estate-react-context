@@ -14,7 +14,7 @@ const HouseContextProvider = ({children}) => {
   const [Countres,setCountres]=useState([])
   const [Property,setProperty]=useState('property (any)')
   const [Propertes,setPropertes]=useState([])
-  const [Price,setPrice]=useState('Proce range (any)')
+  const [Price,setPrice]=useState('Price range (any)')
   const [loading,setloading]=useState(false)
   
 
@@ -47,7 +47,7 @@ const allPropites=Houses.map((house)=>{
   return house.type
 })
 
-const uniqueTypes=['property(any)',...new Set(allPropites)]
+const uniqueTypes=['property (any)',...new Set(allPropites)]
 
 setPropertes(uniqueTypes);
 // console.log(uniqueCoutreis); 
